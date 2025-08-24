@@ -1,0 +1,41 @@
+.article-card {
+  position: relative;
+  max-width: 312px;
+  background-color: var(--color-4, #1f3a93); /* blue background */
+  border-radius: 12px;
+  margin: 10px 10px;
+  text-decoration: none;
+}
+
+.paperclip {
+  position: absolute;
+  top: -25px;
+  left: 20px;
+  height: 90px;
+}
+
+.card-content {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.headline {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #1f3a93;
+  margin-bottom: 20px;
+}
+
+.article-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.byline {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #1f3a93;
+}
