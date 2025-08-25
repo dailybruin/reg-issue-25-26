@@ -6,6 +6,7 @@ import Sidebar from "./components/Sidebar";
 import { Sections } from "./components/Sections";
 import EditorsLetter from "./components/EditorsLetter";
 import Interactive from "./components/Interactive";
+import About from "./components/About";
 
 function App() {
   const [data, setData] = useState(null);
@@ -31,6 +32,9 @@ function App() {
           <EditorsLetter />
           <Interactive />
           <Sections />
+          <div style={{ height: '300px', background: 'transparent' }} />
+          <About />
+          <div style={{ height: '100px', background: 'transparent' }} />
           <Footer />
         </div>
       </div>

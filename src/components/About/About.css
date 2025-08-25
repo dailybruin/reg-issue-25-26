@@ -1,0 +1,24 @@
+.about-container {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 0;
+  margin-left: -50vw;
+  margin-right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+}
