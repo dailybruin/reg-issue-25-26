@@ -1,0 +1,18 @@
+.interactive-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  padding: 20px;
+}
+
+.interactive-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.interactive-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}

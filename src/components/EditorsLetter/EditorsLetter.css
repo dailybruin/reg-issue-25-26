@@ -1,0 +1,20 @@
+.editors-letter-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  padding: 20px;
+}
+
+.editors-letter-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.editors-letter-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}

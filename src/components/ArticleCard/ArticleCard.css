@@ -5,6 +5,11 @@
   border-radius: 12px;
   margin: 10px 10px;
   text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.article-card:hover {
+  transform: rotate(6deg);
 }
 
 .paperclip {

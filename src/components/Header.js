@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import DBLogo from '../images/DailyBruinLogo.svg'
 
 const DBHeader = styled("div")`
-  z-index: 2001;
+  z-index: 9999;
 
   position: -webkit-sticky;
   position: sticky;
@@ -12,7 +12,7 @@ const DBHeader = styled("div")`
   width: 100%;
   padding: 0.2em 0;
   color: white;
-  font-family: 'ITC Century';
+  font-family: "ITC Century";
   font-style: normal;
   font-weight: 400;
   text-align: center;
@@ -30,7 +30,7 @@ const Header = () => {
         <img src={DBLogo} alt="Daily Bruin" />
       </a>
     </DBHeader>
-  )
-}
+  );
+};
 
 export default Header;

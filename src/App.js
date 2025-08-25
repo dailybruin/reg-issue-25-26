@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import FourCardsLayout from "./layouts/FourCards";
 import Sidebar from "./components/Sidebar";
+import { Sections } from "./components/Sections";
+import EditorsLetter from "./components/EditorsLetter";
+import Interactive from "./components/Interactive";
 
 function App() {
   const [data, setData] = useState(null);
@@ -26,7 +28,9 @@ function App() {
 
         <div className="main-content">
           <Header />
-          <FourCardsLayout />
+          <EditorsLetter />
+          <Interactive />
+          <Sections />
           <Footer />
         </div>
       </div>

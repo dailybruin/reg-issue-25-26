@@ -1,0 +1,142 @@
+.sections-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.section-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.header-image {
+  width: 100vw;
+  height: auto;
+  max-width: none;
+  object-fit: cover;
+}
+
+.section-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto 0 20%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* News Section - 3x3 Grid */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Sports Section - 3x3 Grid */
+.sports-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Arts Section - 2x3 Grid */
+.arts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Opinion Section - 2x2 Grid */
+.opinion-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* The Quad Section - 1x2 Grid */
+.thequad-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Multimedia Section - 4x3 Grid */
+.multimedia-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 1400px;
+}
+
+/* Prime Section - 1x1 Grid */
+.prime-grid {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+  .multimedia-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .news-grid,
+  .sports-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+  }
+
+  .multimedia-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-content {
+    margin: 0 auto;
+    width: 100%;
+    gap: 15px;
+    padding: 0 15px;
+  }
+
+  .news-grid,
+  .sports-grid,
+  .arts-grid,
+  .opinion-grid,
+  .thequad-grid,
+  .multimedia-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+
+  .header-image {
+    width: 100vw;
+  }
+}
