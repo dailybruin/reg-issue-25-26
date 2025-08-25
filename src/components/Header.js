@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-import DBLogo from '../images/DailyBruinLogo.svg'
+import DBLogo from "../images/DailyBruinLogo.svg";
 
 const DBHeader = styled("div")`
   z-index: 9999;
