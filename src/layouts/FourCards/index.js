@@ -1,5 +1,5 @@
 import React from "react";
-import ArticleCard from "../../components/ArticleCard";
+import ArticleCard from "../../components/ArticleCard/Vert";
 import EditorsLetter from "../../components/EditorsLetter";
 import Interactive from "../../components/Interactive";
 

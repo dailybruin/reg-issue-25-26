@@ -1,5 +1,5 @@
 import React from "react";
-import ArticleCard from "../ArticleCard";
+import { makeArticleCards } from "./utilities";
 import NewsHeader from "../../images/common/News.png";
 import "./Sections.css";
 
@@ -10,15 +10,7 @@ const NewsSection = () => {
         <img src={NewsHeader} alt="News" className="header-image" />
       </div>
       <div className="section-content news-grid">
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
+        {makeArticleCards(9)}
       </div>
     </div>
   );

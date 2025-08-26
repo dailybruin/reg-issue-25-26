@@ -1,5 +1,5 @@
 import React from "react";
-import ArticleCard from "../ArticleCard";
+import { makeArticleCards } from "./utilities";
 import ArtsHeader from "../../images/common/ARTS.png";
 import "./Sections.css";
 
@@ -10,12 +10,7 @@ const ArtsSection = () => {
         <img src={ArtsHeader} alt="Arts" className="header-image" />
       </div>
       <div className="section-content arts-grid">
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
+       {makeArticleCards(6)}
       </div>
     </div>
   );

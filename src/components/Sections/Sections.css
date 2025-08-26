@@ -67,9 +67,10 @@
 .opinion-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: clamp(10px, 1.5vw, 25px);
-  width: clamp(35vw, 50vw, 60vw); 
-  margin: 0 auto; 
+  gap: clamp(8px, 1vw, 16px);
+  /* make the opinion grid span almost the full section width so each card gets more horizontal room */
+  width: 70%;
+  margin: 0 auto;
 }
 
 .thequad-grid {
@@ -117,10 +118,14 @@
   }
   
   .arts-grid,
-  .opinion-grid,
   .thequad-grid {
-    width: clamp(50vw, 70vw, 80vw);
+    width: clamp(45vw, 65vw, 75vw);
     margin: 0 auto; 
+  }
+
+  .opinion-grid {
+  width: calc(100% - 2vw);
+  margin: 0 1vw;
   }
   
   .multimedia-grid {

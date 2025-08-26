@@ -1,5 +1,6 @@
 import React from "react";
-import ArticleCard from "../ArticleCard";
+import ArticleCard from "../ArticleCard/Vert";
+import { makeArticleCards } from "./utilities";
 import MultimediaHeader from "../../images/common/MULTIMEDIA.png";
 import "./Sections.css";
 
@@ -10,18 +11,7 @@ const MultimediaSection = () => {
         <img src={MultimediaHeader} alt="Multimedia" className="header-image" />
       </div>
       <div className="section-content multimedia-grid">
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
+        {makeArticleCards(12)}
       </div>
     </div>
   );

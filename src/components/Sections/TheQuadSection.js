@@ -1,6 +1,7 @@
 import React from "react";
-import ArticleCard from "../ArticleCard";
 import TheQuadHeader from "../../images/common/THE QUAD.png";
+import { makeArticleCards } from "./utilities";
+
 import "./Sections.css";
 
 const TheQuadSection = () => {
@@ -10,8 +11,7 @@ const TheQuadSection = () => {
         <img src={TheQuadHeader} alt="The Quad" className="header-image" />
       </div>
       <div className="section-content thequad-grid">
-        <ArticleCard />
-        <ArticleCard />
+        {makeArticleCards(2)}
       </div>
     </div>
   );

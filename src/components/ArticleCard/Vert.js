@@ -3,7 +3,7 @@ import "./ArticleCard.css";
 import paperclip from "../../images/common/paper-clip.png"; 
 import sampleImg from "../../images/common/sample-img.png";
 
-const ArticleCard = () => {
+const Vert = () => {
   return (
     <a className="article-card" href="https://unsplash.com/s/photos/cat">
       <img src={paperclip} alt="paperclip" className="paperclip" />
@@ -21,4 +21,4 @@ const ArticleCard = () => {
   );
 };
 
-export default ArticleCard;
+export default Vert;

@@ -1,7 +1,8 @@
 import React from "react";
-import ArticleCard from "../ArticleCard";
 import SportsHeader from "../../images/common/SPORTS.png";
 import "./Sections.css";
+import { makeArticleCards } from "./utilities";
+
 
 const SportsSection = () => {
   return (
@@ -10,15 +11,7 @@ const SportsSection = () => {
         <img src={SportsHeader} alt="Sports" className="header-image" />
       </div>
       <div className="section-content sports-grid">
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
-        <ArticleCard />
+        {makeArticleCards(9)}
       </div>
     </div>
   );

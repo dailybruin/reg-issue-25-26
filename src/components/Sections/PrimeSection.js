@@ -1,5 +1,5 @@
 import React from "react";
-import ArticleCard from "../ArticleCard";
+import { makeArticleCards } from "./utilities";
 import PrimeHeader from "../../images/common/PRIME.png";
 import "./Sections.css";
 
@@ -10,7 +10,7 @@ const PrimeSection = () => {
         <img src={PrimeHeader} alt="Prime" className="header-image" />
       </div>
       <div className="section-content prime-grid">
-        <ArticleCard />
+        {makeArticleCards(1)}
       </div>
     </div>
   );
