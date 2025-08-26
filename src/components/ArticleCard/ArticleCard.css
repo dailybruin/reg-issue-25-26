@@ -1,11 +1,13 @@
 .article-card {
   position: relative;
-  max-width: 312px;
-  background-color: var(--color-4, #1f3a93); /* blue background */
+  background-color: var(--color-4, #1f3a93);
   border-radius: 12px;
-  margin: 10px 10px;
+  margin: 0;
   text-decoration: none;
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .article-card:hover {
@@ -17,6 +19,7 @@
   top: -25px;
   left: 20px;
   height: 90px;
+  z-index: 1;
 }
 
 .card-content {
@@ -24,23 +27,33 @@
   border-radius: 12px;
   padding: 20px;
   text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; 
 }
 
 .headline {
-  font-size: 1.3rem;
+  font-size: clamp(1rem, 2.5vw, 1.3rem); 
   font-weight: bold;
   color: #1f3a93;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 1.3;
 }
 
 .article-img {
   width: 100%;
+  height: auto;
+  max-height: 40%; 
+  object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
 }
 
 .byline {
-  font-size: 0.9rem;
+  font-size: clamp(0.8rem, 2vw, 0.9rem); 
   font-style: italic;
   color: #1f3a93;
+  margin-top: auto; 
 }

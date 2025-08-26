@@ -25,83 +25,112 @@
 }
 
 .section-content {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  width: 80%;
-  margin: 0 auto 0 20%;
-  padding: 0 20px;
+  align-items: flex-start;
+  padding: 0;
   box-sizing: border-box;
 }
 
-/* News Section - 3x3 Grid */
+.article-card {
+  width: 100%; 
+  min-width: 0; 
+  aspect-ratio: 0.75; 
+  box-sizing: border-box;
+}
+
 .news-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  width: 100%;
-  max-width: 1200px;
+  gap: clamp(10px, 1.5vw, 25px);
+  width: clamp(45vw, 70vw, 75vw); 
+  margin: 0 auto; 
 }
 
-/* Sports Section - 3x3 Grid */
 .sports-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  width: 100%;
-  max-width: 1200px;
+  gap: clamp(10px, 1.5vw, 25px);
+  width: clamp(45vw, 70vw, 75vw); 
+  margin: 0 auto; 
 }
 
-/* Arts Section - 2x3 Grid */
 .arts-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  width: 100%;
-  max-width: 800px;
+  gap: clamp(10px, 1.5vw, 25px);
+  width: clamp(35vw, 50vw, 60vw); 
+  margin: 0 auto; 
 }
 
-/* Opinion Section - 2x2 Grid */
 .opinion-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  width: 100%;
-  max-width: 800px;
+  gap: clamp(10px, 1.5vw, 25px);
+  width: clamp(35vw, 50vw, 60vw); 
+  margin: 0 auto; 
 }
 
-/* The Quad Section - 1x2 Grid */
 .thequad-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  width: 100%;
-  max-width: 800px;
+  gap: clamp(10px, 1.5vw, 25px);
+  width: clamp(35vw, 50vw, 60vw); 
+  margin: 0 auto; 
 }
 
-/* Multimedia Section - 4x3 Grid */
 .multimedia-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  width: 100%;
-  max-width: 1400px;
+  gap: clamp(10px, 1.5vw, 25px);
+  width: clamp(55vw, 75vw, 80vw); 
+  margin: 0 auto; 
 }
 
-/* Prime Section - 1x1 Grid */
 .prime-grid {
   display: flex;
   justify-content: center;
-  width: 100%;
-  max-width: 400px;
+  width: clamp(15vw, 25vw, 30vw); 
+  margin: 0 auto; 
 }
 
-/* Responsive Design */
 @media (max-width: 1400px) {
   .multimedia-grid {
     grid-template-columns: repeat(3, 1fr);
-    max-width: 1000px;
+    width: clamp(45vw, 60vw, 65vw);
+    margin: 0 auto; 
+  }
+}
+
+@media (max-width: 1200px) {
+  .section-content {
+    margin-left: 0; 
+    width: 100vw;
+    padding: 0 2vw;
+  }
+  
+  .news-grid,
+  .sports-grid {
+    width: clamp(60vw, 80vw, 90vw);
+    margin: 0 auto; 
+  }
+  
+  .arts-grid,
+  .opinion-grid,
+  .thequad-grid {
+    width: clamp(50vw, 70vw, 80vw);
+    margin: 0 auto; 
+  }
+  
+  .multimedia-grid {
+    width: clamp(60vw, 80vw, 90vw);
+    margin: 0 auto; 
+  }
+  
+  .prime-grid {
+    width: clamp(25vw, 40vw, 50vw);
+    margin: 0 auto; 
   }
 }
 
@@ -109,23 +138,23 @@
   .news-grid,
   .sports-grid {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 800px;
+    width: clamp(50vw, 70vw, 80vw);
+    margin: 0 auto; 
   }
 
   .multimedia-grid {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 800px;
+    width: clamp(50vw, 70vw, 80vw);
+    margin: 0 auto; 
   }
 }
 
 @media (max-width: 600px) {
   .section-content {
-    margin: 0 auto;
-    width: 100%;
-    gap: 15px;
-    padding: 0 15px;
+    width: 100vw;
+    padding: 0 3vw;
   }
-
+  
   .news-grid,
   .sports-grid,
   .arts-grid,
@@ -133,9 +162,15 @@
   .thequad-grid,
   .multimedia-grid {
     grid-template-columns: 1fr;
-    max-width: 400px;
+    width: clamp(60vw, 85vw, 94vw);
+    margin: 0 auto; 
   }
-
+  
+  .prime-grid {
+    width: clamp(40vw, 70vw, 80vw);
+    margin: 0 auto; 
+  }
+  
   .header-image {
     width: 100vw;
   }
