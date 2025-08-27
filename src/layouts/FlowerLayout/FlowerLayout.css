@@ -1,0 +1,30 @@
+
+.top-flower,
+.bot-flower {
+  display: flex;
+  justify-content: center;
+}
+
+.top-flower {
+  align-items: flex-end;
+}
+
+.bot-flower {
+  align-items: flex-start;
+}
+
+.petal {
+  margin: 12px;
+}
+
+.top-right {
+  margin-right: 15%;
+}
+
+.bottom-left {
+  margin-left: 15%;
+}
+
+.flower-wrap {
+  margin: 0 15%;
+}
