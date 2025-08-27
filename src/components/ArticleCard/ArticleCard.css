@@ -1,13 +1,13 @@
+/* unused?? */
 .article-card {
   position: relative;
   background-color: var(--color-4, #1f3a93);
   border-radius: 12px;
-  margin: 0;
+  margin: 10px;
   text-decoration: none;
   transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
-  
 }
 
 .article-card:hover {
@@ -45,7 +45,7 @@
 .article-img {
   width: 100%;
   height: auto;
-  max-height: 40%; 
+  max-height: 40%;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
@@ -55,5 +55,5 @@
   font-size: clamp(0.4rem, 1.2vw, 0.9rem);
   font-style: italic;
   color: #1f3a93;
-  margin-top: auto; 
+  margin-top: auto;
 }

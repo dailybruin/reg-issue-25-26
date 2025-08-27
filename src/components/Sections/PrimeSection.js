@@ -10,7 +10,7 @@ const PrimeSection = () => {
         <img src={PrimeHeader} alt="Prime" className="header-image" />
       </div>
       <div className="section-content prime-grid">
-        {makeArticleCards(1)}
+        {makeArticleCards(1, {}, "Horz")}
       </div>
     </div>
   );

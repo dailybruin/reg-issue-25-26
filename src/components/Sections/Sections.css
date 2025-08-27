@@ -1,18 +1,19 @@
 .sections-container {
-  width: 100%;
+  width: 85%;         
+  margin-left: 14%;     
   max-width: 100%;
-  margin: 0;
   padding: 0;
 }
 
 .section {
-  margin-bottom: 40px;
+  margin-bottom: 150px;
   width: 100%;
 }
 
 .section-header {
   display: flex;
   justify-content: center;
+  margin-left: 10px;
   margin-bottom: 30px;
   width: 100%;
 }
@@ -43,23 +44,23 @@
 .news-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: clamp(10px, 1.5vw, 25px);
-  width: clamp(45vw, 70vw, 75vw); 
+  gap: clamp(10px, 2vw, 40px);
+  width: clamp(45vw, 65vw, 75vw); 
   margin: 0 auto; 
 }
 
 .sports-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: clamp(10px, 1.5vw, 25px);
-  width: clamp(45vw, 70vw, 75vw); 
+  gap: clamp(10px, 10vw, 40px);
+  width: clamp(45vw, 65vw, 75vw); 
   margin: 0 auto; 
 }
 
 .arts-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: clamp(10px, 1.5vw, 25px);
+  gap: clamp(10px, 2vw, 40px);
   width: clamp(35vw, 50vw, 60vw); 
   margin: 0 auto; 
 }
@@ -68,31 +69,32 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: clamp(8px, 1vw, 16px);
-  /* make the opinion grid span almost the full section width so each card gets more horizontal room */
   width: 70%;
   margin: 0 auto;
 }
 
 .thequad-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: clamp(10px, 1.5vw, 25px);
-  width: clamp(35vw, 50vw, 60vw); 
+  grid-template-columns: 1fr 1.5fr;
+  gap: clamp(10px, 2vw, 40px);
+  width: clamp(35vw, 55vw, 60vw); 
   margin: 0 auto; 
+  align-items: end;
 }
+
 
 .multimedia-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: clamp(10px, 1.5vw, 25px);
-  width: clamp(55vw, 75vw, 80vw); 
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(10px, 2vw, 40px);
+  width: clamp(55vw, 65vw, 80vw); 
   margin: 0 auto; 
 }
 
 .prime-grid {
   display: flex;
   justify-content: center;
-  width: clamp(15vw, 25vw, 30vw); 
+  width: clamp(15vw, 30vw, 40vw); 
   margin: 0 auto; 
 }
 
