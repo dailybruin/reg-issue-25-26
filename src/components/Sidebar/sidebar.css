@@ -53,33 +53,39 @@
   font-size: 1.1rem;
   font-weight: bold;
   letter-spacing: 1px;
-  display: inline-block;
-  padding-left: 10px;
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+}
+
+.sidebar-link:hover {
+  background-color: #3b4d6b; 
+  color: #fff; 
 }
 
 /* line + dot effect */
 .sidebar-link::before {
+  --dot-size: 6px;
   content: "";
   position: absolute;
-  left: -10px;
-  top: 50%;
-  width: 20px;
-  height: 2px;
+  left: 0;
+  top: 60%;
+  width: 2px;
+  height: 40px;
   background: white;
   transform: translateY(-50%);
-}
+} 
 
 .sidebar-link::after {
   content: "";
   position: absolute;
-  right: -15px;
-  top: 50%;
-  width: 10px;
-  height: 10px;
+  right: 0;
+  top: 100%;
+  width: 100%;
+  margin-top: 5px;
+  height: 2px;
   background: white;
-  border-radius: 50%;
-  transform: translateY(-50%);
-}
+} 
 
 /* Hide/show toggle button for mobile */
 .sidebar-toggle {
