@@ -7,6 +7,7 @@ import { Sections } from "./components/Sections";
 import EditorsLetter from "./components/EditorsLetter";
 import Interactive from "./components/Interactive";
 import About from "./components/About";
+import Landing from "./components/Landing";
 
 function App() {
   const [data, setData] = useState(null);
@@ -29,6 +30,7 @@ function App() {
 
         <div className="main-content">
           <Header />
+          <Landing />
           <EditorsLetter />
           <Interactive />
           <Sections />
