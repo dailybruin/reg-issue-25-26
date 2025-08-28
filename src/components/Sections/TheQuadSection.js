@@ -6,7 +6,7 @@ import "./Sections.css";
 
 const TheQuadSection = () => {
   return (
-    <div className="section">
+    <div className="section" id='quad'>
       <div className="section-header">
         <img src={TheQuadHeader} alt="The Quad" className="header-image" />
       </div>

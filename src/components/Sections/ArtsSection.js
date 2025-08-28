@@ -6,7 +6,7 @@ import ArtLayout from "../../layouts/ArtLayout";
 
 const ArtsSection = () => {
   return (
-    <div className="section">
+    <div className="section" id='arts'>
       <div className="section-header">
         <img src={ArtsHeader} alt="Arts" className="header-image" />
       </div>

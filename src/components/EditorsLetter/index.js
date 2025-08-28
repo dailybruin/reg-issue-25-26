@@ -4,7 +4,7 @@ import letterImage from "../../images/common/LETTER.png";
 
 const EditorsLetter = () => {
   return (
-    <div className="editors-letter-container">
+    <div className="editors-letter-container" id='letter'>
       <div className="editors-letter-content">
         <img
           src={letterImage}

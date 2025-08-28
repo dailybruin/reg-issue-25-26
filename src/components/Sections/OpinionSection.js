@@ -6,7 +6,7 @@ import FlowerLayout from "../../layouts/FlowerLayout";
 
 const OpinionSection = () => {
   return (
-    <div className="section">
+    <div className="section" id='opinion'>
       <div className="section-header">
         <img src={OpinionHeader} alt="Opinion" className="header-image" />
       </div>
