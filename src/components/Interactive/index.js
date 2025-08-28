@@ -4,7 +4,7 @@ import interactiveImage from "../../images/common/INTERACTIVE.png";
 
 const Interactive = () => {
   return (
-    <div className="interactive-container">
+    <div className="interactive-container" id='interactive'>
       <div className="interactive-content">
         <img
           src={interactiveImage}

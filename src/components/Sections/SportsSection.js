@@ -6,7 +6,7 @@ import { makeArticleCards } from "./utilities";
 
 const SportsSection = () => {
   return (
-    <div className="section">
+    <div className="section" id='sports'>
       <div className="section-header">
         <img src={SportsHeader} alt="Sports" className="header-image" />
       </div>

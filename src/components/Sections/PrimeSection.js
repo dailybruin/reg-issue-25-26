@@ -5,7 +5,7 @@ import "./Sections.css";
 
 const PrimeSection = () => {
   return (
-    <div className="section">
+    <div className="section" id='prime'>
       <div className="section-header">
         <img src={PrimeHeader} alt="Prime" className="header-image" />
       </div>

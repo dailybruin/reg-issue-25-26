@@ -6,7 +6,7 @@ import "./Sections.css";
 
 const MultimediaSection = () => {
   return (
-    <div className="section">
+    <div className="section" id='multimedia'>
       <div className="section-header">
         <img src={MultimediaHeader} alt="Multimedia" className="header-image" />
       </div>

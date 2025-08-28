@@ -44,14 +44,12 @@ const Credits= styled.div`
 const Landing = ({landing, credits}) => {
     
     return (
-        <>
+        <div id='title'>
             <Container>
                 <Image src={LandingImage} alt="Landing image" />
                 <Credits>{credits}</Credits>
             </Container>
-            
-            
-        </>
+        </div>
     );
 }
 export default Landing;

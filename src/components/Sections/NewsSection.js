@@ -5,7 +5,7 @@ import "./Sections.css";
 
 const NewsSection = () => {
   return (
-    <div className="section">
+    <div className="section" id='news'>
       <div className="section-header">
         <img src={NewsHeader} alt="News" className="header-image" />
       </div>
