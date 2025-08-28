@@ -60,6 +60,12 @@ const Sidebar = () => {
           <a href="#quad" className="sidebar-link">
             THE QUAD
           </a>
+          <a href="#multimedia" className="sidebar-link">
+            MULTIMEDIA
+          </a>
+          <a href="#prime" className="sidebar-link">
+            PRIME
+          </a>
         </nav>
       </aside>
     </>
