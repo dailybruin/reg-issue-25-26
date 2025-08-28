@@ -1,6 +1,6 @@
 .sections-container {
-  width: 85%;         
-  margin-left: 14%;     
+  width: 85%;
+  margin-left: 14%;
   max-width: 100%;
   padding: 0;
 }
@@ -35,9 +35,9 @@
 }
 
 .article-card {
-  width: 100%; 
-  min-width: 0; 
-  aspect-ratio: 0.75; 
+  width: 100%;
+  min-width: 0;
+  aspect-ratio: 0.75;
   box-sizing: border-box;
 }
 
@@ -45,24 +45,24 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: clamp(10px, 2vw, 40px);
-  width: clamp(45vw, 65vw, 75vw); 
-  margin: 0 auto; 
+  width: clamp(45vw, 65vw, 75vw);
+  margin: 0 auto;
 }
 
 .sports-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: clamp(10px, 10vw, 40px);
-  width: clamp(45vw, 65vw, 75vw); 
-  margin: 0 auto; 
+  width: clamp(45vw, 65vw, 75vw);
+  margin: 0 auto;
 }
 
 .arts-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: clamp(10px, 2vw, 40px);
-  width: clamp(35vw, 50vw, 60vw); 
-  margin: 0 auto; 
+  width: clamp(35vw, 50vw, 60vw);
+  margin: 0 auto;
 }
 
 .opinion-grid {
@@ -77,67 +77,66 @@
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   gap: clamp(10px, 2vw, 40px);
-  width: clamp(35vw, 55vw, 60vw); 
-  margin: 0 auto; 
+  width: clamp(35vw, 55vw, 60vw);
+  margin: 0 auto;
   align-items: end;
 }
-
 
 .multimedia-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: clamp(10px, 2vw, 40px);
-  width: clamp(55vw, 65vw, 80vw); 
-  margin: 0 auto; 
+  width: clamp(55vw, 65vw, 80vw);
+  margin: 0 auto;
 }
 
 .prime-grid {
   display: flex;
   justify-content: center;
-  width: clamp(15vw, 30vw, 40vw); 
-  margin: 0 auto; 
+  width: clamp(15vw, 30vw, 40vw);
+  margin: 0 auto;
 }
 
 @media (max-width: 1400px) {
   .multimedia-grid {
     grid-template-columns: repeat(3, 1fr);
     width: clamp(45vw, 60vw, 65vw);
-    margin: 0 auto; 
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 1200px) {
   .section-content {
-    margin-left: 0; 
+    margin-left: 0;
     width: 100vw;
     padding: 0 2vw;
   }
-  
+
   .news-grid,
   .sports-grid {
     width: clamp(60vw, 80vw, 90vw);
-    margin: 0 auto; 
+    margin: 0 auto;
   }
-  
+
   .arts-grid,
   .thequad-grid {
     width: clamp(45vw, 65vw, 75vw);
-    margin: 0 auto; 
+    margin: 0 auto;
   }
 
   .opinion-grid {
-  width: calc(100% - 2vw);
-  margin: 0 1vw;
+    width: calc(100% - 2vw);
+    margin: 0 1vw;
   }
-  
+
   .multimedia-grid {
     width: clamp(60vw, 80vw, 90vw);
-    margin: 0 auto; 
+    margin: 0 auto;
   }
-  
+
   .prime-grid {
     width: clamp(25vw, 40vw, 50vw);
-    margin: 0 auto; 
+    margin: 0 auto;
   }
 }
 
@@ -146,38 +145,42 @@
   .sports-grid {
     grid-template-columns: repeat(2, 1fr);
     width: clamp(50vw, 70vw, 80vw);
-    margin: 0 auto; 
+    margin: 0 auto;
   }
 
   .multimedia-grid {
     grid-template-columns: repeat(2, 1fr);
     width: clamp(50vw, 70vw, 80vw);
-    margin: 0 auto; 
+    margin: 0 auto;
   }
 }
-
 @media (max-width: 600px) {
+  .sections-container {
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+  }
   .section-content {
     width: 100vw;
     padding: 0 3vw;
   }
-  
+
   .news-grid,
   .sports-grid,
   .arts-grid,
   .opinion-grid,
   .thequad-grid,
   .multimedia-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     width: clamp(60vw, 85vw, 94vw);
-    margin: 0 auto; 
+    margin: 0 auto;
   }
-  
+
   .prime-grid {
     width: clamp(40vw, 70vw, 80vw);
-    margin: 0 auto; 
+    margin: 0 auto;
   }
-  
+
   .header-image {
     width: 100vw;
   }

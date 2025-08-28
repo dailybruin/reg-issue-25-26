@@ -80,3 +80,38 @@
   border-radius: 50%;
   transform: translateY(-50%);
 }
+
+/* Hide/show toggle button for mobile */
+.sidebar-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--color-5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 20;
+  display: none;
+}
+
+/* Show toggle button only on mobile */
+@media (max-width: 768px) {
+  .sidebar-toggle {
+    display: block;
+  }
+
+  .sidebar {
+    width: 70vw; /* wider on mobile */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .sidebar.closed {
+    transform: translateX(-100%);
+  }
+}
