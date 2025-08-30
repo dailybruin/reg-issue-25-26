@@ -166,7 +166,6 @@
   }
 
   .news-grid,
-  .sports-grid,
   .arts-grid,
   .opinion-grid,
   .thequad-grid,
@@ -174,6 +173,13 @@
     grid-template-columns: repeat(2, 1fr);
     width: clamp(60vw, 85vw, 94vw);
     margin: 0 auto;
+  }
+
+  .sports-grid {
+    grid-template-columns: repeat(2, 1fr);
+    width: clamp(60vw, 85vw, 94vw);
+    margin: 0 auto;
+    gap: clamp(10px, 2vw, 40px);
   }
 
   .prime-grid {

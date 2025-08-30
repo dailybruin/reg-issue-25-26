@@ -60,8 +60,8 @@
 }
 
 .sidebar-link:hover {
-  background-color: #3b4d6b; 
-  color: #fff; 
+  background-color: #3b4d6b;
+  color: #fff;
 }
 
 /* line + dot effect */
@@ -75,7 +75,7 @@
   height: 40px;
   background: white;
   transform: translateY(-50%);
-} 
+}
 
 .sidebar-link::after {
   content: "";
@@ -86,9 +86,8 @@
   margin-top: 5px;
   height: 2px;
   background: white;
-} 
+}
 
-/* Hide/show toggle button for mobile */
 .sidebar-toggle {
   position: fixed;
   top: 20px;
@@ -102,16 +101,16 @@
   display: none;
 }
 
-/* Show toggle button only on mobile */
 @media (max-width: 768px) {
   .sidebar-toggle {
     display: block;
   }
 
   .sidebar {
-    width: 70vw; /* wider on mobile */
+    width: 45vw;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
+    z-index: 999;
   }
 
   .sidebar.open {

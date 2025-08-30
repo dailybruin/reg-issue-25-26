@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./sidebar.css";
 
-const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+const Sidebar = ({ mobileToggleOnly, forceMobile, isOpen, setIsOpen }) => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -14,61 +13,96 @@ const Sidebar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const toggleSidebar = () => {
-    setIsOpen(!isOpen);
-  };
+  // If only rendering the mobile toggle button (for EditorsLetter), do not render the sidebar itself
+  if (mobileToggleOnly) {
+    return null;
+  }
+
+  // Use forced mobile mode if provided (for EditorsLetter)
+  const mobile = forceMobile !== undefined ? forceMobile : isMobile;
+  const open = typeof isOpen === "boolean" ? isOpen : false;
 
   return (
-    <>
-      {isMobile && (
-        <button className="sidebar-toggle" onClick={toggleSidebar}>
-          ☰
-        </button>
-      )}
+    <aside className={`sidebar ${mobile ? (open ? "open" : "closed") : ""}`}>
+      <div className="sidebar-header">
+        <h2>Registration Issue</h2>
+        <p>2025</p>
+        <div className="sidebar-divider"></div>
+      </div>
 
-      <aside
-        className={`sidebar ${isMobile ? (isOpen ? "open" : "closed") : ""}`}
-      >
-        <div className="sidebar-header">
-          <h2>Registration Issue</h2>
-          <p>2025</p>
-          <div className="sidebar-divider"></div>
-        </div>
-
-        <nav className="sidebar-nav">
-          <a href="#title" className="sidebar-link">
-            TITLE
-          </a>
-          <a href="#letter" className="sidebar-link">
-            LETTER
-          </a>
-          <a href="#interactive" className="sidebar-link">
-            INTERACTIVE
-          </a>
-          <a href="#news" className="sidebar-link">
-            NEWS
-          </a>
-          <a href="#sports" className="sidebar-link">
-            SPORTS
-          </a>
-          <a href="#arts" className="sidebar-link">
-            ARTS
-          </a>
-          <a href="#opinion" className="sidebar-link">
-            OPINION
-          </a>
-          <a href="#quad" className="sidebar-link">
-            THE QUAD
-          </a>
-          <a href="#multimedia" className="sidebar-link">
-            MULTIMEDIA
-          </a>
-          <a href="#prime" className="sidebar-link">
-            PRIME
-          </a>
-        </nav>
-      </aside>
-    </>
+      <nav className="sidebar-nav">
+        <a
+          href="#title"
+          className="sidebar-link"
+          onClick={() => setIsOpen && setIsOpen(false)}
+        >
+          TITLE
+        </a>
+        <a
+          href="#letter"
+          className="sidebar-link"
+          onClick={() => setIsOpen && setIsOpen(false)}
+        >
+          LETTER
+        </a>
+        <a
+          href="#interactive"
+          className="sidebar-link"
+          onClick={() => setIsOpen && setIsOpen(false)}
+        >
+          INTERACTIVE
+        </a>
+        <a
+          href="#news"
+          className="sidebar-link"
+          onClick={() => setIsOpen && setIsOpen(false)}
+        >
+          NEWS
+        </a>
+        <a
+          href="#sports"
+          className="sidebar-link"
+          onClick={() => setIsOpen && setIsOpen(false)}
+        >
+          SPORTS
+        </a>
+        <a
+          href="#arts"
+          className="sidebar-link"
+          onClick={() => setIsOpen && setIsOpen(false)}
+        >
+          ARTS
+        </a>
+        <a
+          href="#opinion"
+          className="sidebar-link"
+          onClick={() => setIsOpen && setIsOpen(false)}
+        >
+          OPINION
+        </a>
+        <a
+          href="#quad"
+          className="sidebar-link"
+          onClick={() => setIsOpen && setIsOpen(false)}
+        >
+          THE QUAD
+        </a>
+        <a
+          href="#multimedia"
+          className="sidebar-link"
+          onClick={() => setIsOpen && setIsOpen(false)}
+        >
+          MULTIMEDIA
+        </a>
+        <a
+          href="#prime"
+          className="sidebar-link"
+          onClick={() => setIsOpen && setIsOpen(false)}
+        >
+          PRIME
+        </a>
+      </nav>
+    </aside>
   );
 };
 
