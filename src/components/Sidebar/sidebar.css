@@ -45,6 +45,7 @@
   flex-direction: column;
   gap: 25px;
   width: 100%;
+  overflow-y: auto;
 }
 
 .sidebar-link {
@@ -86,6 +87,16 @@
   margin-top: 5px;
   height: 2px;
   background: white;
+}
+
+.sidebar-dot {
+  position: absolute;
+  top: calc(100% + 2px); /* aligns with your line */
+  right: 0px;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
 }
 
 .sidebar-toggle {

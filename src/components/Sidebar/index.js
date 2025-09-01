@@ -36,70 +36,70 @@ const Sidebar = ({ mobileToggleOnly, forceMobile, isOpen, setIsOpen }) => {
           className="sidebar-link"
           onClick={() => setIsOpen && setIsOpen(false)}
         >
-          TITLE
+          TITLE <span className="sidebar-dot"></span>
         </a>
         <a
           href="#letter"
           className="sidebar-link"
           onClick={() => setIsOpen && setIsOpen(false)}
         >
-          LETTER
+          LETTER <span className="sidebar-dot"></span>
         </a>
         <a
           href="#interactive"
           className="sidebar-link"
           onClick={() => setIsOpen && setIsOpen(false)}
         >
-          INTERACTIVE
+          INTERACTIVE <span className="sidebar-dot"></span>
         </a>
         <a
           href="#news"
           className="sidebar-link"
           onClick={() => setIsOpen && setIsOpen(false)}
         >
-          NEWS
+          NEWS <span className="sidebar-dot"></span>
         </a>
         <a
           href="#sports"
           className="sidebar-link"
           onClick={() => setIsOpen && setIsOpen(false)}
         >
-          SPORTS
+          SPORTS <span className="sidebar-dot"></span>
         </a>
         <a
           href="#arts"
           className="sidebar-link"
           onClick={() => setIsOpen && setIsOpen(false)}
         >
-          ARTS
+          ARTS <span className="sidebar-dot"></span>
         </a>
         <a
           href="#opinion"
           className="sidebar-link"
           onClick={() => setIsOpen && setIsOpen(false)}
         >
-          OPINION
+          OPINION <span className="sidebar-dot"></span>
         </a>
         <a
           href="#quad"
           className="sidebar-link"
           onClick={() => setIsOpen && setIsOpen(false)}
         >
-          THE QUAD
+          THE QUAD <span className="sidebar-dot"></span>
         </a>
         <a
           href="#multimedia"
           className="sidebar-link"
           onClick={() => setIsOpen && setIsOpen(false)}
         >
-          MULTIMEDIA
+          MULTIMEDIA <span className="sidebar-dot"></span>
         </a>
         <a
           href="#prime"
           className="sidebar-link"
           onClick={() => setIsOpen && setIsOpen(false)}
         >
-          PRIME
+          PRIME <span className="sidebar-dot"></span>
         </a>
       </nav>
     </aside>
