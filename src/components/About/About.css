@@ -1,15 +1,19 @@
 .about-container {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 0;
-  margin-left: -50vw;
-  margin-right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: transparent;
-  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin-left: 2%;
+}
+
+/* someone end the suffering... */
+
+@media (max-width: 600px) {
+  .about-container {
+    width: 90%;
+    max-width: 100%;
+    padding: 0;
+    
+  }
 }
 
 .about-content {
@@ -24,14 +28,13 @@
 }
 
 .about-img {
-  display: block;
   width: 100%;
   height: auto;
 }
 
 .apply-overlay {
   position: absolute;
-  top: 16%;  /* adjust until it sits over the blue box */
+  top: 15.3%; 
   left: 55%;
   transform: translateX(-50%);
   background: #2d518b;
@@ -49,7 +52,7 @@
 
 .dashed-lines1 {
   position: absolute;
-  top: 15.8%;  /* adjust until it sits over the blue box */
+  top: 15.2%;
   left: 55%;
   transform: translateX(-50%);
   border: 1px dashed white;
@@ -62,12 +65,12 @@
 
 .dashed-lines2 {
   position: absolute;
-  top: 15.6%;  /* adjust until it sits over the blue box */
+  top: 15%;
   left: 55%;
   transform: translateX(-50%);
   border: 1px dashed white;
   padding: 5%;
-  width: 45.0%;
+  width: 45%;
   height: 8.1%;
 
   border-radius: 10px;
@@ -86,4 +89,3 @@
 p {
   margin: 0;
 }
-

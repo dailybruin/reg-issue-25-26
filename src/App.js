@@ -34,7 +34,6 @@ function App() {
           <EditorsLetter />
           <Interactive />
           <Sections />
-          <div style={{ height: "300px", background: "transparent" }} />
           <About />
           <div style={{ height: "100px", background: "transparent" }} />
           <Footer />

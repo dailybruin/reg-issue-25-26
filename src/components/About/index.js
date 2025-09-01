@@ -6,14 +6,14 @@ import aboutImageNOBOX from "../../images/common/ABOUT_NOBOX.png";
 const About = () => {
   return (
     <div className="about-container">
-      <div className="about-content">
-        <div className="about-section">
-          <img
-            src={aboutImageNOBOX}
-            alt="About Daily Bruin"
-            className="about-img"
-          />
+      <div className="about-section">
+        <img
+          src={aboutImageNOBOX}
+          alt="About Daily Bruin"
+          className="about-img"
+        />
 
+        <div className="apply-box">
           <div className="dashed-lines1"></div>
           <div className="dashed-lines2"></div>
 
