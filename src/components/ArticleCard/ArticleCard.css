@@ -22,6 +22,12 @@
   z-index: 1;
 }
 
+@media (max-width: 768px) {
+  .paperclip {
+    height: 65px;
+  }
+}
+
 .card-content {
   background: white;
   border-radius: 12px;

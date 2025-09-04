@@ -22,6 +22,12 @@
   z-index: 1;
 }
 
+@media (max-width: 768px) {
+  .paperclip-horz {
+    height: 65px;
+  }
+}
+
 .card-content-horz {
   background: white;
   border-radius: 12px;
