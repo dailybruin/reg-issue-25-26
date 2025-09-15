@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import LandingImage from "../images/temp_landing.png"
+import LandingImage from "../images/reg-issue-landing-2025.gif"
 
 
 const Container = styled.div`
@@ -42,11 +42,27 @@ const Credits= styled.div`
 `;
 
 const Landing = ({landing, credits}) => {
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 769);
+    useEffect(() => {
+        const handleResize = () => {
+          setIsMobile(window.innerWidth < 769);
+        };
+    
+        window.addEventListener("resize", handleResize);
+    
+        // cleanup listener
+        return () => {
+          window.removeEventListener("resize", handleResize);
+        };
+      }, []);
     
     return (
         <div id='title'>
             <Container>
-                <Image src={LandingImage} alt="Landing image" />
+                <Image 
+                  src={LandingImage} 
+                  alt="Landing image" 
+                />
                 <Credits>{credits}</Credits>
             </Container>
         </div>

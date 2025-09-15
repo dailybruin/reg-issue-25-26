@@ -11,6 +11,7 @@ import Landing from "./components/Landing";
 
 function App() {
   const [data, setData] = useState(null);
+  const [showSidebar, setShowSidebar] = useState(false);
 
   /* for now, use articles from grad issue as template */
   useEffect(() => {
@@ -21,10 +22,25 @@ function App() {
       .then((res) => setData(res.data["article.aml"]));
   }, []);
 
+  useEffect(() => {
+    const landing = document.getElementById("title");
+    if (!landing) return;
+
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        setShowSidebar(!entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+
+    obs.observe(landing);
+    return () => obs.disconnect();
+  }, [data]);
+
   return (
     data && (
       <div className="App">
-        <Sidebar />
+        {showSidebar && <Sidebar />}
 
         <div className="background-grid" />
 

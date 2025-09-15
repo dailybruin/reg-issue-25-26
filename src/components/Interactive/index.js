@@ -12,11 +12,7 @@ const Interactive = () => {
     };
 
     window.addEventListener("resize", handleResize);
-
-    // cleanup listener
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
@@ -24,9 +20,17 @@ const Interactive = () => {
       <div className="interactive-content">
         <img
           src={isMobile ? mobileInteractive : interactiveImage}
-          alt="Interactive content"
+          alt="Interactive background"
           className="interactive-image"
         />
+
+        <div className="map-overlay">
+          <iframe
+            src="/dataregissue/regmap.html"
+            title="Interactive Map"
+            className="map-iframe"
+          />
+        </div>
       </div>
     </div>
   );
