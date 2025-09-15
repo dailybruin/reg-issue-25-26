@@ -26,7 +26,7 @@ const Interactive = () => {
 
         <div className="map-overlay">
           <iframe
-            src="/dataregissue/regmap.html"
+            src={`${process.env.PUBLIC_URL}/dataregissue/regmap.html`}
             title="Interactive Map"
             className="map-iframe"
           />
