@@ -75,3 +75,9 @@
   object-fit: cover;
   border-radius: 8px;
 }
+
+/* Underline headline and byline when the whole card is hovered */
+.article-card-horz:hover .headline-horz,
+.article-card-horz:hover .byline-horz {
+  text-decoration: underline;
+}
