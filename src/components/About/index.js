@@ -5,7 +5,7 @@ import aboutImageNOBOX from "../../images/common/ABOUT_NOBOX.png";
 
 const About = () => {
   return (
-    <div className="about-container">
+    <div className="about-container" id='about'>
       <div className="about-section">
         <img
           src={aboutImageNOBOX}

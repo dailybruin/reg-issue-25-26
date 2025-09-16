@@ -101,6 +101,13 @@ const Sidebar = ({ mobileToggleOnly, forceMobile, isOpen, setIsOpen }) => {
         >
           PRIME <span className="sidebar-dot"></span>
         </a>
+        <a
+          href="#about"
+          className="sidebar-link"
+          onClick={() => setIsOpen && setIsOpen(false)}
+        >
+          ABOUT <span className="sidebar-dot"></span>
+        </a>
       </nav>
     </aside>
   );
