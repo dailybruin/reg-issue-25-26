@@ -63,3 +63,9 @@
   color: #1f3a93;
   margin-top: auto;
 }
+
+/* Underline headline and byline when the whole card is hovered */
+.article-card:hover .headline,
+.article-card:hover .byline {
+  text-decoration: underline;
+}
