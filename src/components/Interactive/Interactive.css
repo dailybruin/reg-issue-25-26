@@ -9,6 +9,7 @@
   padding: 0;
   box-sizing: border-box;
   z-index: 100;
+  max-width: 100%;
 }
 
 .interactive-content {
@@ -50,7 +51,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: white; */
 }
 
 .map-overlay .map-text h3 {
@@ -81,6 +81,7 @@
   border: none;
 }
 
+/* Smaller desktop screen */
 @media (max-width: 768px) {
   .map-overlay {
     top: 34%;
@@ -108,5 +109,37 @@
     font-size: clamp(0.4rem, 1.2vw, 0.9rem);
     font-style: italic;
     color: #1f3a93;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 700px) {
+  .map-overlay {
+    top: 37%;
+    left: 13%;
+    width: 72%;
+    height: 55%;
+  }
+  .map-overlay .map-text h3 {
+    font-size: 0.5rem;
+    font-weight: bold;
+    color: #1f3a93;
+    margin-top: 3%;
+    line-height: 1.3;
+  }
+
+  .map-overlay .map-text p {
+    color: #000;
+    font-size: 0.4rem;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 1px;
+  }
+
+  .map-overlay .map-text p:last-child {
+    font-size: 0.4rem;
+    font-style: italic;
+    color: #1f3a93;
+    margin-bottom: 0.5px;
   }
 }
