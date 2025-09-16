@@ -36,7 +36,8 @@
 .card-content {
   background: white;
   border-radius: 12px;
-  padding: 20px;
+  padding: 10px;
+  padding-top: 20px;
   text-align: center;
   flex: 1;
   display: flex;
@@ -46,10 +47,11 @@
 }
 
 .headline {
-  font-size: clamp(0.6rem, 1.5vw, 1.4rem);
+  font-size: clamp(0.6rem, 1.4vw, 1.4rem);
   font-weight: bold;
   color: #1f3a93;
-  margin-bottom: 15px;
+  margin-bottom: 5%;
+  margin-top: 5%;
   line-height: 1.3;
 }
 

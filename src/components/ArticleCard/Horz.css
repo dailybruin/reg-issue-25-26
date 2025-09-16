@@ -54,7 +54,7 @@
 }
 
 .headline-horz {
-  font-size: clamp(0.5rem, 1.1vw, 1.1rem); /* smaller than vertical */
+  font-size: clamp(0.6rem, 1.4vw, 1.5vw);
   font-weight: bold;
   color: #1f3a93;
   margin-bottom: 15px;
@@ -62,7 +62,7 @@
 }
 
 .byline-horz {
-  font-size: clamp(0.35rem, 0.9vw, 0.7rem);
+  font-size: clamp(0.4rem, 1.2vw, 0.9rem);
   font-style: italic;
   color: #1f3a93;
 }
