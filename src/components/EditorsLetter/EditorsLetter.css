@@ -196,11 +196,43 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 550px) {
   .letter-body p {
     font-size: 7.5px;
   }
   .letter-signatures {
     font-size: 7.5px;
+  }
+}
+
+@media (max-width: 485px) {
+  .letter-body p {
+    font-size: 6.75px;
+  }
+  .letter-signatures {
+    font-size: 6.75px;
+  }
+}
+
+@media (max-width: 440px) {
+  .letter-body p {
+    font-size: 6.25px;
+  }
+  .letter-signatures {
+    font-size: 6.25px;
+  }
+}
+
+@media (max-width: 400px) {
+  .letter-body p {
+    font-size: 6px;
+  }
+  .letter-body {
+    margin-top: 5%;
+    font-size: 6px
+  }
+  .letter-signatures {
+    margin-top: 0%;
+    margin-left: 45%;
   }
 }
