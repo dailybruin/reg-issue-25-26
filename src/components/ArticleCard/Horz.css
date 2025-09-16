@@ -16,16 +16,15 @@
 
 .paperclip-horz {
   position: absolute;
-  top: -25px;
+  top: -35px;
   left: 20px;
-  height: 90px;
+  /* Make the paperclip scale responsively but stay within bounds:
+     clamp(MIN, PREFERRED, MAX) where preferred uses viewport width.
+     Adjust values as needed for visual balance. */
+  height: clamp(48px, 6vw, 80px);
+  width: auto; /* preserve aspect ratio for an img/svg */
+  max-width: 40%;
   z-index: 1;
-}
-
-@media (max-width: 768px) {
-  .paperclip-horz {
-    height: 65px;
-  }
 }
 
 .card-content-horz {
@@ -44,7 +43,7 @@
   flex: 0 0 40%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .img-col {
@@ -66,7 +65,6 @@
   font-size: clamp(0.35rem, 0.9vw, 0.7rem);
   font-style: italic;
   color: #1f3a93;
-  margin-top: auto;
 }
 
 .article-img-horz {
