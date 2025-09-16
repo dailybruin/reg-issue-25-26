@@ -37,12 +37,17 @@ function App() {
     return () => obs.disconnect();
   }, [data]);
 
+  const isMobile = window.matchMedia('(max-width: 768px)').matches;
+
   return (
     data && (
       <div className="App">
         {showSidebar && <Sidebar />}
-
-        <div className="background-grid" />
+        
+        {isMobile 
+          ? <div className="background-grid-mobile" /> 
+          : <div className="background-grid" />
+        }
 
         <div className="main-content">
           <Header />
