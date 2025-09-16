@@ -25,7 +25,7 @@ const Sidebar = ({ mobileToggleOnly, forceMobile, isOpen, setIsOpen }) => {
   return (
     <aside className={`sidebar ${mobile ? (open ? "open" : "closed") : ""}`}>
       <div className="sidebar-header">
-        <h2>Registration Issue</h2>
+        <h2 style={{ fontWeight: 'bold' }}>Registration Issue</h2>
         <p>2025</p>
         <div className="sidebar-divider"></div>
       </div>
