@@ -16,6 +16,11 @@
   }
 }
 
+html, body {
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+}
+
 .App-header {
   background-color: var(--color-4);
   min-height: 100vh;
