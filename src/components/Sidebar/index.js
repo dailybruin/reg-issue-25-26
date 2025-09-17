@@ -24,6 +24,13 @@ const Sidebar = ({ mobileToggleOnly, forceMobile, isOpen, setIsOpen }) => {
 
   return (
     <aside className={`sidebar ${mobile ? (open ? "open" : "closed") : ""}`}>
+      <button
+        className="sidebar-close"
+        onClick={() => setIsOpen && setIsOpen(false)}
+      >
+        ×
+      </button>
+
       <div className="sidebar-header">
         <h2 style={{ fontWeight: 'bold' }}>Registration Issue</h2>
         <p>2025</p>

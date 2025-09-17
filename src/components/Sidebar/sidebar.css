@@ -66,6 +66,18 @@
   transform: translateX(3px);
 }
 
+.sidebar-close {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+
 @media (max-width: 768px) {
   .sidebar {
     padding-top: 40px;
