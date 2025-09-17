@@ -76,6 +76,11 @@
 }
 
 @media (max-width: 500px) {
+  .apply-overlay {
+    font-size: 3vw;
+    padding-top: 5%;
+  }
+
   .dashed-lines1 {
     top: 15.4%;
   }

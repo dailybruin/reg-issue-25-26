@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import LandingImage from "../images/reg-issue-landing-2025.gif"
-
+import LandingImage from "../images/reg-issue-landing-2025.gif";
 
 const Container = styled.div`
   width: 100%;
@@ -24,48 +23,31 @@ const Image = styled.img`
   object-fit: cover;
 `;
 
-const Credits= styled.div`
-  background-color: black;
-  color: white;
-  width: 100%;
-  padding: 1em;
-  height: 1em;
-  font-family: Angkor;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28.91px;
-  text-align: right;
-  white-space: nowrap;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-
+const Credits = styled.div`
+  position: absolute;
+  bottom: 2%;
+  right: 1%;
+  background-color: #d9d9d9;
+  color: black;
+  padding: clamp(1px, 0.8vw, 10px) clamp(1px, 1.5vw, 2px);
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(8px, 1.5vw, 10px);
+  @media (max-width: 768px) {
+    bottom: 5px;
+    right: 5px;
+    padding: 4px 8px;
+    font-size: 5px;
+  }
 `;
 
-const Landing = ({landing, credits}) => {
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 769);
-    useEffect(() => {
-        const handleResize = () => {
-          setIsMobile(window.innerWidth < 769);
-        };
-    
-        window.addEventListener("resize", handleResize);
-    
-        // cleanup listener
-        return () => {
-          window.removeEventListener("resize", handleResize);
-        };
-      }, []);
-    
-    return (
-        <div id='title'>
-            <Container>
-                <Image 
-                  src={LandingImage} 
-                  alt="Landing image" 
-                />
-                <Credits>{credits}</Credits>
-            </Container>
-        </div>
-    );
-}
+const Landing = ({ landing, credits }) => {
+  return (
+    <div id="title">
+      <Container>
+        <Image src={LandingImage} alt="Landing image" />
+        <Credits>Illustration by Helen Juwon Park</Credits>
+      </Container>
+    </div>
+  );
+};
 export default Landing;
