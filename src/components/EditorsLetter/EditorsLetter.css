@@ -215,10 +215,13 @@
 
 @media (max-width: 440px) {
   .letter-body p {
-    font-size: 6.25px;
+    font-size: 6px;
   }
   .letter-signatures {
-    font-size: 6.25px;
+    font-size: 6px;
+  }
+  .letter-body {
+    margin-top: 2%;
   }
 }
 
