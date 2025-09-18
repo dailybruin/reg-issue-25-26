@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { createPortal } from "react-dom";  
 import "./sidebar.css";
 
 const Sidebar = ({ mobileToggleOnly, forceMobile, isOpen, setIsOpen }) => {
@@ -12,17 +13,27 @@ const Sidebar = ({ mobileToggleOnly, forceMobile, isOpen, setIsOpen }) => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  // If only rendering the mobile toggle button (for EditorsLetter), do not render the sidebar itself
-  if (mobileToggleOnly) {
-    return null;
-  }
-
+  
   // Use forced mobile mode if provided (for EditorsLetter)
   const mobile = forceMobile !== undefined ? forceMobile : isMobile;
   const open = typeof isOpen === "boolean" ? isOpen : false;
 
+  if (mobileToggleOnly) {
+    if (!mobile || open) return null;
+    return createPortal(
+      <button
+        className="sidebar-toggle"
+        aria-label="Open navigation menu"
+        onClick={() => setIsOpen && setIsOpen(true)}
+      >
+        ☰
+      </button>,
+      document.body
+    );
+  }
+
   return (
+    <>
     <aside className={`sidebar ${mobile ? (open ? "open" : "closed") : ""}`}>
       {mobile && (
         <button
@@ -119,6 +130,7 @@ const Sidebar = ({ mobileToggleOnly, forceMobile, isOpen, setIsOpen }) => {
         </a>
       </nav>
     </aside>
+    </>
   );
 };
 

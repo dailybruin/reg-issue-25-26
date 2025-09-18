@@ -163,6 +163,7 @@ html {
 
 @media (max-width: 700px) {
   .sidebar-toggle {
+    position: fixed !important;
     display: block;
   }
 

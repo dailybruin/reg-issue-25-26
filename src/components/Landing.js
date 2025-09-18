@@ -45,7 +45,7 @@ const Landing = ({ landing, credits }) => {
     <div id="title">
       <Container>
         <Image src={LandingImage} alt="Landing image" />
-        <Credits>Helen Juwon Park/Illustrations director
+        <Credits>Helen Juwon Park/Illustrations Director & Kaylen Ho/Daily Bruin Staff
 </Credits>
       </Container>
     </div>
