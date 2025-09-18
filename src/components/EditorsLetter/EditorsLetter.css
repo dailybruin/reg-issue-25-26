@@ -176,11 +176,16 @@
 }
 
 @media (max-width: 700px) {
+  .editors-letter-overlay {
+    top: 38%;
+  }
   .letter-body p {
     font-size: clamp(9px, 2vw, 10px);
+    line-height: 130%;
   }
   .letter-signatures {
     font-size: clamp(9px, 2vw, 10px);
+    margin-bottom: -0.5rem;
   }
 }
 
