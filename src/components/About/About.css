@@ -1,17 +1,18 @@
 .about-container {
   width: 100%;
-  max-width: 100%;
+  max-width: 100vw;
   padding: 0;
-  margin-left: 2%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
-
-/* someone end the suffering... */
 
 @media (max-width: 768px) {
   .about-container {
-    width: 90%;
-    max-width: 100%;
+    width: 100%;
+    max-width: 100vw;
     padding: 0;
+    margin: 0 auto;
   }
 }
 
@@ -22,13 +23,20 @@
 }
 
 .about-section {
-  position: relative; /* allows absolute children */
-  display: inline-block;
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .about-img {
   width: 100%;
   height: auto;
+  max-width: 100vw;
+  display: block;
+  box-sizing: border-box;
 }
 
 .apply-overlay {

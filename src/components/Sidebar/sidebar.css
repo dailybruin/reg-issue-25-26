@@ -185,3 +185,31 @@ html {
     transform: translateX(-100%);
   }
 }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .sidebar-link {
+    font-size: 0.5rem;
+  }
+
+  .sidebar-header h2 {
+    font-size: 0.8rem;
+  }
+
+  .sidebar-header p {
+    font-size: 0.5rem;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .sidebar-link {
+    font-size: 0.5rem;
+  }
+
+  .sidebar-header h2 {
+    font-size: 0.5rem;
+  }
+
+  .sidebar-header p {
+    font-size: 0.5rem;
+  }
+}

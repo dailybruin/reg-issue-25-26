@@ -45,7 +45,8 @@ const Landing = ({ landing, credits }) => {
     <div id="title">
       <Container>
         <Image src={LandingImage} alt="Landing image" />
-        <Credits>Illustration by Helen Juwon Park</Credits>
+        <Credits>Helen Juwon Park/Illustrations director
+</Credits>
       </Container>
     </div>
   );
