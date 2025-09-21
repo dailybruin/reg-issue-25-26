@@ -11,8 +11,10 @@ const TheQuadSection = () => {
         <img src={TheQuadHeader} alt="The Quad" className="header-image" />
       </div>
       <div className="section-content thequad-grid">
-        {makeArticleCards(1)}
-        {makeArticleCards(1, {}, "Horz")}
+        {/* {makeArticleCards(1)}
+        {makeArticleCards(1, {}, "Horz")} */}
+        {makeArticleCards("quad_articles", { limit: 1 })}
+        {makeArticleCards("quad_articles", { limit: 1, offset: 1 }, "Horz")}
       </div>
     </div>
   );

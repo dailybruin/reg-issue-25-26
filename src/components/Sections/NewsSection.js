@@ -10,7 +10,8 @@ const NewsSection = () => {
         <img src={NewsHeader} alt="News" className="header-image" />
       </div>
       <div className="section-content news-grid">
-        {makeArticleCards(9)}
+        {/* {makeArticleCards(9)} */}
+        {makeArticleCards("news_articles")}
       </div>
     </div>
   );

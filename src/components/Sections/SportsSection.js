@@ -11,7 +11,8 @@ const SportsSection = () => {
         <img src={SportsHeader} alt="Sports" className="header-image" />
       </div>
       <div className="section-content sports-grid">
-        {makeArticleCards(9)}
+        {/* {makeArticleCards(9)} */}
+        {makeArticleCards("sports_articles")}
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { makeArticleCards } from "./utilities";
+// import { makeArticleCards } from "./utilities";
 import OpinionHeader from "../../images/common/OPINION.png";
 import "./Sections.css";
 import FlowerLayout from "../../layouts/FlowerLayout";

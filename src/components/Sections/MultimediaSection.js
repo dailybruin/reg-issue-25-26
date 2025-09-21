@@ -11,7 +11,8 @@ const MultimediaSection = () => {
         <img src={MultimediaHeader} alt="Multimedia" className="header-image" />
       </div>
       <div className="section-content multimedia-grid">
-        {makeArticleCards(10)}
+        {/* {makeArticleCards(10)} */}
+        {makeArticleCards("multimedia_articles")}
       </div>
     </div>
   );

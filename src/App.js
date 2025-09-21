@@ -19,7 +19,12 @@ function App() {
       "https://kerckhoff.dailybruin.com/api/packages/flatpages/grad-issue-24-25"
     )
       .then((res) => res.json())
-      .then((res) => setData(res.data["article.aml"]));
+      // .then((res) => setData(res.data["article.aml"]));
+      .then((res) => {
+        const aml = res.data["article.aml"];
+        setData(aml);
+        if (typeof window !== "undefined") window.__ARTICLE_AML__ = aml;
+      });
   }, []);
 
   useEffect(() => {
