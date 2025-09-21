@@ -62,7 +62,7 @@
 }
 
 .byline-horz {
-  font-size: clamp(0.4rem, 1.2vw, 1rem);
+  font-size: clamp(0.4rem, 1.2vw, 1.2rem);
   font-style: italic;
   color: #1f3a93;
 }
