@@ -16,9 +16,7 @@ const Vert = ({
       <div className="card-content">
         <h2 className="headline">{article_title}</h2>
         <img src={image} alt="article" className="article-img" />
-        <p className="byline">
-          {author_byline}
-        </p>
+        <p className="byline">By {author_byline}</p>
       </div>
     </a>
   );
