@@ -13,10 +13,9 @@ function App() {
   const [data, setData] = useState(null);
   const [showSidebar, setShowSidebar] = useState(false);
 
-  /* for now, use articles from grad issue as template */
   useEffect(() => {
     fetch(
-      "https://kerckhoff.dailybruin.com/api/packages/flatpages/grad-issue-24-25"
+      "https://kerckhoff.dailybruin.com/api/packages/flatpages/reg-issue-25-26"
     )
       .then((res) => res.json())
       // .then((res) => setData(res.data["article.aml"]));
