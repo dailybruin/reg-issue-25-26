@@ -12,7 +12,7 @@ const ArtLayout = () => {
         {/* {[...Array(6)].map((_, i) => (
           <Vert key={i} />
         ))} */}
-        {makeArticleCards("art_articles", { limit: 6 })}
+        {makeArticleCards("arts_articles", { limit: 6 })}
       </div>
     );
   }
@@ -21,21 +21,21 @@ const ArtLayout = () => {
       <div className="left-column">
         {/* <Vert />
         <Vert /> */}
-        {makeArticleCards("art_articles", { limit: 2 }, "Vert")}
+        {makeArticleCards("arts_articles", { limit: 2 }, "Vert")}
       </div>
       <div className="right-column">
         <div style={{ marginRight: "15%" }}>
           {/* <Horz /> */}
-          {makeArticleCards("art_articles", { limit: 1, offset: 2 }, "Horz")}
+          {makeArticleCards("arts_articles", { limit: 1, offset: 2 }, "Horz")}
         </div>
         <div className="mid-vert">
           {/* <Vert />
           <Vert /> */}
-          {makeArticleCards("art_articles", { limit: 2, offset: 3 }, "Vert")}
+          {makeArticleCards("arts_articles", { limit: 2, offset: 3 }, "Vert")}
         </div>
         <div style={{ marginRight: "15%" }}>
           {/* <Horz /> */}
-          {makeArticleCards("art_articles", { limit: 1, offset: 5 }, "Horz")}
+          {makeArticleCards("arts_articles", { limit: 1, offset: 5 }, "Horz")}
         </div>
       </div>
     </section>

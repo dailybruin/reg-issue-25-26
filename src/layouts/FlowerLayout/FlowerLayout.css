@@ -28,3 +28,7 @@
 .flower-wrap {
   margin: 0 8%;
 }
+
+.flower-wrap .article-card {
+  width: clamp(260px, 24vw, 340px);
+}

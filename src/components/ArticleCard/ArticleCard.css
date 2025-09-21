@@ -47,7 +47,7 @@
 }
 
 .headline {
-  font-size: clamp(0.6rem, 1.4vw, 1.4rem);
+  font-size: clamp(0.6rem, 1.4vw, 1.2vw);
   font-weight: bold;
   color: #1f3a93;
   margin-bottom: 5%;
@@ -65,7 +65,7 @@
 }
 
 .byline {
-  font-size: clamp(0.4rem, 1.2vw, 0.9rem);
+  font-size: clamp(0.4rem, 1.2vw, 0.7rem);
   font-style: italic;
   color: #1f3a93;
   margin-top: auto;
